@@ -1,0 +1,19 @@
+.container {
+    border: 2px solid black;
+    width: 640px;
+    height: 640px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+
+.grid {
+    box-sizing: border-box;
+    background-color: white;
+    border: 1px solid white;
+    /* flex: 1 1 calc(640px/4); */
+}
+
+/* .grid:hover {
+    background-color: blue;
+} */
