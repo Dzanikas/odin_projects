@@ -1,0 +1,143 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  .icon {
+    height: 20px;
+  }
+
+  img[src="./images/tangram.svg"] {
+    height: 50px;
+  }
+
+  .main-grid {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template: 1fr 1fr 4.5fr / 1fr 5fr;
+  }
+
+  .nav-bar {
+    grid-column: 1;
+    grid-row: 1 / 4;
+    background-color: rgb(51, 173, 255);
+    color: white;
+    padding: 20px;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  #logo {
+    font-size: 24px;
+  }
+
+  .nav-bar ul {
+    margin-top: 50px;
+    padding-left: 0px;
+  }
+
+  .nav-bar li {
+    display: flex;
+    list-style-type: none;
+    margin-top: 10px;
+  }
+
+  .header-top {
+    grid-column: 2;
+    grid-row: 1 / 2;
+  }
+
+  .header-bottom {
+    grid-column: 2;
+    grid-row: 2 /3;
+  }
+
+  .content {
+    grid-column: 2;
+    grid-row: 3 / 4;
+    background-color: rgb(224, 224, 235);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .card-grid {
+    grid-column: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 75px;
+    padding-bottom: 50px;
+  }
+
+.card-grid > h1 {
+    position: absolute;
+    font-size: 28px;
+    margin-top: -50px;
+}
+
+.card {
+    background-color: aliceblue;
+    color: black;
+    box-shadow: -5px 0px 0px orange, 3px 3px 3px gray;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+/* .card > div:first-child {
+    display: flex;
+    justify-content: flex-start;
+} */
+
+.card > div:last-child {
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-end;
+}
+
+.card h2 {
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 14px;
+}
+
+  .side-bar {
+    grid-column: 2;
+  }

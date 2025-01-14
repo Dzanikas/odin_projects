@@ -1,7 +1,9 @@
-def cipher(string, shift)
+class Cipher
+
+def code(string, shift = 0)
   string.downcase.chars.map do |i|
     ((i.ord - 'a'.ord + shift.to_i) % 26 + 'a'.ord).chr
   end.join
 end
 
-puts cipher('ZORRO', 5)
+end

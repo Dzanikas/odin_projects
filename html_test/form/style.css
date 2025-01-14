@@ -1,0 +1,111 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+@font-face {
+    font-family: 'Odin Font';
+    src: url('./fonts/Norse-Bold.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container {
+    display: flex;
+    align-items: stretch;
+    height: 100vh;
+    width: 100vw;
+}
+
+.sidebar {
+    flex: auto;
+    background: url('./images/halie-west-25xggax4bSA-unsplash.jpg') center / cover no-repeat;
+    position: relative;
+}
+
+.credit {
+    text-align: center;
+    color: aliceblue;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main {
+    flex: 3;
+    background-color: aqua;
+}
+
+.shaded {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 180px;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Odin Font', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 38px;
+    color: aliceblue;
+}
+
+img[src="./images/odin-lined.png"] {
+    height: 90%;
+    width: auto;
+}
+
+input:invalid {
+    border-color: red;
+  }
+  
+  input:valid {
+    border-color: green;
+  }
+
+.form {
+    background-color: aliceblue;
+    box-shadow: 0 8px 8px gray;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    margin-right: 60px;
+    margin-bottom: 20px;
+}
